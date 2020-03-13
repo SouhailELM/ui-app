@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import ToggleButton from '@material-ui/lab/ToggleButton';
 import { makeStyles, withStyles, Theme, createStyles } from '@material-ui/core/styles';
+import 'typeface-roboto';
 
 
 
@@ -32,18 +33,18 @@ function Buttons() {
         root: {
             background: '#FFFFFF',
             borderRadius: 6,
+            color: '#1A051D',
         },
         label: {
-
+            fontFamily: 'Roboto',
             fontStyle: 'normal',
             fontWeight: 'normal',
             fontSize: 13,
-            color: '#1A051D',
             display: 'flex',
             alignItems: 'center'
         },
         selected: {
-            background: 'linear-gradient(199.65deg, #BD7AE3 100%, #8461C9 0%)',
+            background: 'linear-gradient(199.65deg, #BD7AE3 0%, #8461C9 100%)',
             borderRadius: 6,
             color: '#FFFFFF'
         }
